@@ -1,0 +1,44 @@
+#include <stdio.h>
+#include <stdbool.h>
+#include <string.h>
+#define MAX_NON_TERMINALS 10
+#define MAX_TERMINALS 10
+int num_non_terminals, num_terminals;
+char non_terminals[MAX_NON_TERMINALS];
+char terminals[MAX_TERMINALS];
+char first[MAX_NON_TERMINALS][MAX_TERMINALS];
+void computeFirst(char non_terminal) {
+    if (non_terminal == 'S') {
+        strcpy(first[0], "a");
+    } else if (non_terminal == 'A') {
+        strcpy(first[1], "a");
+    } else if (non_terminal == 'B') {
+        strcpy(first[2], "b");
+    }
+}
+int main() {
+    printf("Enter the number of non-terminals: ");
+    scanf("%d", &num_non_terminals);
+    printf("Enter the non-terminals (e.g., S A B): ");
+    for (int i = 0; i < num_non_terminals; i++) {
+        scanf(" %c", &non_terminals[i]);
+    }
+    printf("Enter the number of terminals: ");
+    scanf("%d", &num_terminals);
+    printf("Enter the terminals (e.g., a b): ");
+    for (int i = 0; i < num_terminals; i++) {
+        scanf(" %c", &terminals[i]);
+    }
+    for (int i = 0; i < num_non_terminals; i++) {
+        computeFirst(non_terminals[i]);
+    }
+    printf("\nFIRST sets:\n");
+    for (int i = 0; i < num_non_terminals; i++) {
+        printf("FIRST(%c): { ", non_terminals[i]);
+        for (int j = 0; first[i][j] != '\0'; j++) {
+            printf("%c ", first[i][j]);
+        }
+        printf("}\n");
+    }
+    return 0;
+}
