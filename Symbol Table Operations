@@ -1,0 +1,61 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#define MAX_SYMBOLS 100
+struct Symbol {
+    char name[30];
+    int value;
+};
+struct Symbol symbolTable[MAX_SYMBOLS];
+int symbolCount = 0;
+void insertSymbol(const char *name, int value) {
+    if (symbolCount < MAX_SYMBOLS) {
+        strcpy(symbolTable[symbolCount].name, name);
+        symbolTable[symbolCount].value = value;
+        symbolCount++;
+    } else {
+        printf("Symbol table is full. Cannot insert %s.\n", name);
+    }
+}
+int lookupSymbol(const char *name) {
+    for (int i = 0; i < symbolCount; i++) {
+        if (strcmp(symbolTable[i].name, name) == 0) {
+            return symbolTable[i].value;
+        }
+    }
+    return -1; 
+}
+void deleteSymbol(const char *name) {
+    for (int i = 0; i < symbolCount; i++) {
+        if (strcmp(symbolTable[i].name, name) == 0) {
+            for (int j = i; j < symbolCount - 1; j++) {
+                symbolTable[j] = symbolTable[j + 1];
+            }
+            symbolCount--;
+            printf("Symbol %s deleted.\n", name);
+            return;
+        }
+    }
+    printf("Symbol %s not found.\n", name);
+}
+void printSymbolTable() {
+    printf("Symbol Table:\n");
+    for (int i = 0; i < symbolCount; i++) {
+        printf("%s : %d\n", symbolTable[i].name, symbolTable[i].value);
+    }
+}
+int main() {
+    insertSymbol("x", 10);
+    insertSymbol("y", 20);
+    insertSymbol("z", 30);
+    printSymbolTable();
+    int value = lookupSymbol("y");
+    if (value != -1) {
+        printf("Value of y: %d\n", value);
+    } else {
+        printf("Symbol not found.\n");
+    }
+    deleteSymbol("y");
+    printSymbolTable();
+    return 0;
+}
