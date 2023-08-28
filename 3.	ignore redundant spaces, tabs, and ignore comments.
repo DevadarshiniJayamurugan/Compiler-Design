@@ -1,0 +1,32 @@
+#include <stdio.h>
+#include <stdbool.h>
+#include <string.h>
+bool isComment(const char *line) {
+    return (strstr(line, "//") == line) || (strstr(line, "/*") != NULL && strstr(line, "*/") != NULL);
+}
+void removeSpacesAndTabs(char *line) {
+    int i = 0, j = 0;
+    while (line[i]) {
+        if (line[i] != ' ' && line[i] != '\t') {
+            line[j] = line[i];
+            j++;
+        } else if (i > 0 && (line[i - 1] != ' ' && line[i - 1] != '\t')) {
+            line[j] = ' ';
+            j++;
+        }
+        i++;
+    }
+    line[j] = '\0';
+}
+int main() {
+    char input[500];
+    printf("Enter input text (Ctrl+D on a new line to end):\n");
+    while (fgets(input, sizeof(input), stdin)) {
+        if (isComment(input)) {
+            continue; 
+        }
+        removeSpacesAndTabs(input);
+        printf("%s", input);
+    }
+    return 0;
+}
