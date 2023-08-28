@@ -1,0 +1,51 @@
+#include <stdio.h>
+#include <stdbool.h>
+#include <ctype.h>
+#include <string.h>
+bool isOperator(char c) {
+    char operators[] = "+-*/%=";
+    for (int i = 0; operators[i] != '\0'; i++) {
+        if (c == operators[i]) {
+            return true;
+        }
+    }
+    return false;
+}
+bool isIdentifier(const char *str) {
+    if (!isalpha(str[0])) {
+        return false;
+    }
+    for (int i = 1; str[i] != '\0'; i++) {
+        if (!isalnum(str[i])) {
+            return false;
+        }
+    }
+    return true;
+}
+bool isConstant(const char *str) {
+    for (int i = 0; str[i] != '\0'; i++) {
+        if (!isdigit(str[i])) {
+            return false;
+        }
+    }
+    return true;
+}
+int main() {
+    char input[100];
+    printf("Enter a string: ");
+    fgets(input, sizeof(input), stdin);
+    char *token = strtok(input, " \t\n");
+    while (token != NULL) {
+        if (isOperator(token[0])) {
+            printf("Operator: %s\n", token);
+        } else if (isIdentifier(token)) {
+            printf("Identifier: %s\n", token);
+        } else if (isConstant(token)) {
+            printf("Constant: %s\n", token);
+        } else {
+            printf("Invalid token: %s\n", token);
+        }
+        token = strtok(NULL, " \t\n");
+    }
+    return 0;
+}
