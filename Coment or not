@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <stdbool.h>
+#include <string.h>
+bool isComment(const char *line) {
+    if (strstr(line, "//") == line) {
+        return true;
+    }
+    if (strstr(line, "/*") == line && strstr(line, "*/") == line + strlen(line) - 2) {
+        return true;
+    }
+    return false;
+}
+int main() {
+    char input[100];
+    printf("Enter a line of code: ");
+    fgets(input, sizeof(input), stdin);
+
+    if (isComment(input)) {
+        printf("The input is a comment.\n");
+    } else {
+        printf("The input is not a comment.\n");
+    }
+    return 0;
+}
