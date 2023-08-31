@@ -41,41 +41,42 @@
 ## Exp. No. 20 Write a C program to compute TRAILING( ) – operator precedence parser for the given grammar
 ![20](https://github.com/DevadarshiniJayamurugan/Compiler-Design/assets/100745306/79328ae2-f945-4806-b257-b384f7863a1d)
 ## Exp. No. 21 Write a LEX specification file to take input C program from a .c file and count tthe number of characters, number of lines & number of words.
-
+![21](https://github.com/DevadarshiniJayamurugan/Compiler-Design/assets/100745306/943ce22c-ee4a-43cb-89ad-5cb99b74e2a8)
 ## Exp. No. 22 Write a LEX program to print all the constants in the given C source program file.
-
+![image](https://github.com/DevadarshiniJayamurugan/Compiler-Design/assets/100745306/6df6af04-f7aa-4669-9441-6ca76fe5fc60)
 ## Exp. No. 23 Write a LEX program to count the number of Macros defined and header files    included in the C program.
-
+![23](https://github.com/DevadarshiniJayamurugan/Compiler-Design/assets/100745306/32e8cf78-dab6-4cd7-9fa5-2ef7fa8b9389)
 ## Exp. No. 24 Write a LEX program to print all HTML tags in the input file.
-
+![24](https://github.com/DevadarshiniJayamurugan/Compiler-Design/assets/100745306/96d24b94-9cb1-4399-b47a-7995ee7a055b)
 ## Exp. No. 25 Write a LEX program which adds line numbers to the given C program file and display the same in the standard output.
-
+![25](https://github.com/DevadarshiniJayamurugan/Compiler-Design/assets/100745306/340fe470-d9ad-4bb7-86ab-3f3a3b56a705)
 ## Exp. No. 26 Write a LEX program to count the number of comment lines in a given C program and eliminate them and write into another file.
-
+![26](https://github.com/DevadarshiniJayamurugan/Compiler-Design/assets/100745306/3604e675-90c5-4fdd-93ba-3dd9159e6175)
 ## Exp. No. 27 Write a LEX program to identify the capital words from the given input.
-
+![27](https://github.com/DevadarshiniJayamurugan/Compiler-Design/assets/100745306/62a939d9-d78f-4f25-b85a-4c7ef6b61b3c)
 ## Exp. No. 28 Write a LEX Program to check the email address is valid or not.
-
+![28](https://github.com/DevadarshiniJayamurugan/Compiler-Design/assets/100745306/20597fe8-86d4-4f36-9948-335eda6bf358)
 ## Exp. No. 29 Write a LEX Program to convert the substring abc to ABC from the given input string 
-
+![29](https://github.com/DevadarshiniJayamurugan/Compiler-Design/assets/100745306/48bcfd29-71c2-4c5c-b0f6-279a8c9d9e65)
 ## Exp. No. 30 Implement a LEX program to check whether the mobile number is valid or not.
-
+![30](https://github.com/DevadarshiniJayamurugan/Compiler-Design/assets/100745306/b898a3cc-b8a2-4e31-ab93-a5e4b81f229c)
 ## Exp. No. 31 Implement Lexical Analyzer using FLEX (Fast Lexical Analyzer).  The program should separate the tokens in the given C program and display with appropriate caption.
-
+![31](https://github.com/DevadarshiniJayamurugan/Compiler-Design/assets/100745306/df0f04e3-627e-4270-8909-07234a5d55f1)
 ## Exp. No. 32 Write a LEX program to count the number of vowels in the given sentence
-
+![32](https://github.com/DevadarshiniJayamurugan/Compiler-Design/assets/100745306/783c8978-b287-4e27-902b-22dc4761f87c)
 ## Exp. No. 33 Write a LEX program to count the number of vowels in the given sentence.
-
+![33](https://github.com/DevadarshiniJayamurugan/Compiler-Design/assets/100745306/8b53edce-ed6f-459f-b28b-43e4140052be)
 ## Exp. No. 34 Write a LEX program to separate the keywords and identifiers.  
-
+![34](https://github.com/DevadarshiniJayamurugan/Compiler-Design/assets/100745306/122736b7-fed9-449b-bb2c-2eb202bce0ba)
 ## Exp. No. 35 Write a LEX program to recognise numbers and words in a statement
-
+![35](https://github.com/DevadarshiniJayamurugan/Compiler-Design/assets/100745306/d1c65094-94c4-48dc-a8f8-63d28e96c021)
 ## Exp. No. 36 Write a LEX program to identify and count positive and negative numbers.
-
+![36](https://github.com/DevadarshiniJayamurugan/Compiler-Design/assets/100745306/26215ff9-ff21-413e-bd75-bdca637786d1)
 ## Exp. No. 37 Write a LEX program to validate the URL.
-
+![37](https://github.com/DevadarshiniJayamurugan/Compiler-Design/assets/100745306/58051765-5deb-4ec9-b7b4-896e6bb9300e)
 ## Exp. No. 38 Write a LEX program to validate DOB of students.
-
-## Exp. No. 39 Write a LEX program to check whether the given input is digit or not.
-
+![38](https://github.com/DevadarshiniJayamurugan/Compiler-Design/assets/100745306/806e9cd2-d5d8-4805-922e-52031ad1f565)
+## Exp. No. 39 Write  LEX program to check whether the given input is digit or not.
+![39](https://github.com/DevadarshiniJayamurugan/Compiler-Design/assets/100745306/a8446358-982d-4e20-8594-59b865c49b35)
 ## Exp. No. 40 Write a LEX program to implement basic mathematical operations.
+![40](https://github.com/DevadarshiniJayamurugan/Compiler-Design/assets/100745306/1a8a5daf-b85d-4b8b-b3ef-41fd8cbe2a9b)
